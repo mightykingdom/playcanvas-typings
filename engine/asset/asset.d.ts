@@ -1,19 +1,18 @@
 declare namespace pc {
 
-+    const ASSET_ANIMATION: string;
-+    const ASSET_AUDIO: string;
-+    const ASSET_IMAGE: string;
-+    const ASSET_JSON: string;
-+    const ASSET_MODEL: string;
-+    const ASSET_MATERIAL: string;
-+    const ASSET_TEXT: string;
-+    const ASSET_TEXTURE: string;
-+    const ASSET_CUBEMAP: string;
-+    const ASSET_SHADER: string;
-+    const ASSET_CSS: string;
-+    const ASSET_HTML: string;
-+    const ASSET_SCRIPT: string;
-+    const ABSOLUTE_URL: string;
+    const ASSET_ANIMATION = 'animation';
+    const ASSET_AUDIO = 'audio';
+    const ASSET_IMAGE = 'image';
+    const ASSET_JSON = 'json';
+    const ASSET_MODEL = 'model';
+    const ASSET_MATERIAL = 'material';
+    const ASSET_TEXT = 'text';
+    const ASSET_TEXTURE = 'texture';
+    const ASSET_CUBEMAP = 'cubemap';
+    const ASSET_SHADER = 'shader';
+    const ASSET_CSS = 'css';
+    const ASSET_HTML = 'html';
+    const ASSET_SCRIPT = 'script';
 
     /**
     * @name pc.Asset
@@ -92,7 +91,7 @@ declare namespace pc {
         * });
         * app.assets.load(asset);
         */
-        ready(callback: (...args: any[]) => {}, scope: any): void;
+        ready(callback: (...args: any[]) => void, scope?: any): void;
 
         /**
         * @function
@@ -121,7 +120,7 @@ declare namespace pc {
          * });
          * obj.fire('test', 1, 2); // prints 3 to the console
          */
-        on(name: string, callback: (...args: any[]) => void, scope: any): any;
+        on(name: string, callback: (...args: any[]) => void, scope?: any): any;
 
         /**
          * @function
@@ -141,7 +140,7 @@ declare namespace pc {
          * obj.off('test', handler); // Removes all handler functions, called 'test'
          * obj.off('test', handler, this); // Removes all hander functions, called 'test' with scope this
          */
-        off(name: string, callback: (...args: any[]) => void, scope: any): any;
+        off(name: string, callback: (...args: any[]) => void, scope?: any): any;
 
         /**
          * @function
@@ -152,7 +151,7 @@ declare namespace pc {
          * @example
          * obj.fire('test', 'This is the message');
          */
-        fire(name: string, arg1: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any): any;
+        fire(name: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any): any;
 
         /**
          * @function
@@ -168,7 +167,7 @@ declare namespace pc {
          * obj.fire('test', 1, 2); // prints 3 to the console
          * obj.fire('test', 1, 2); // not going to get handled
          */
-        once(name: string, callback: (...args: any[]) => void, scope: any): any;
+        once(name: string, callback: (...args: any[]) => void, scope?: any): any;
 
         /**
         * @function

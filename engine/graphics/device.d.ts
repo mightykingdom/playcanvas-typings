@@ -45,6 +45,8 @@ declare namespace pc {
          */
         readonly maxVolumeSize: number;
 
+        readonly canvas: HTMLCanvasElement;
+
         maxPixelRatio: number;
 
         /**

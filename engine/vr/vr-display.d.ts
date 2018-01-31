@@ -96,6 +96,6 @@ declare namespace pc {
         * @description Return the current frame data that is updated during polling.
         * @returns {VRFrameData} The frame data object
         */
-        getFrameData(): void;    
+        getFrameData(): void;
     }
 }
