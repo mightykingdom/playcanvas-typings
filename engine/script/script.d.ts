@@ -223,9 +223,6 @@ declare namespace pc {
 
     interface ScriptType {
         [key: string]: any;
-        app?: pc.Application;
-        entity?: pc.Entity;
-        enabled?: boolean;
 
         /**
          * initialize is called if defined when script is about to run for the first time.

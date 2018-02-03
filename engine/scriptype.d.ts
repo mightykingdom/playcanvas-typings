@@ -1,5 +1,5 @@
 interface ScriptType {
-    name: string;
+    name?: string;
 
     /**
      * Interface to define public script attributes available in the editor. 
