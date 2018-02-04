@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Neoflash1979/playcanvas-typings#readme",
   "devDependencies": {
     "node-dir": "^0.1.17"
+  },
+  "dependencies": {
+    "@types/webvr-api": "0.0.31"
   }
 }
