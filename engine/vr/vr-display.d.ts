@@ -1,5 +1,5 @@
-type NativeVRDisplay = typeof VRDisplay;
-type NativeVRDisplayCapabilities = typeof VRDisplayCapabilities;
+type NativeVRDisplay = VRDisplay;
+type NativeVRDisplayCapabilities = VRDisplayCapabilities;
 
 declare namespace pc {
 
