@@ -4,6 +4,7 @@ declare namespace pc {
         type: number;
         base: number;
         count: number;
+        indexed?: boolean;
     }
 
     /**
@@ -85,6 +86,7 @@ declare namespace pc {
          * To ignore all dynamic lights, set mask to 0. Defaults to 1.
          */
         mask: number;
+        node: pc.GraphNode;
         mesh: pc.Mesh;
         aabb: pc.BoundingBox;
         material: pc.Material;
