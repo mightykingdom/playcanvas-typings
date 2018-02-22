@@ -11,6 +11,9 @@ declare namespace pc {
     class Plane {
         constructor(point?: pc.Vec3, normal?: pc.Vec3)
 
+        point: pc.Vec3;
+        normal: pc.Vec3;
+
         /**
          * @function
          * @name pc.Plane#intersectsLine
