@@ -8,6 +8,8 @@ declare namespace pc {
     * @param {Number} [y] The y value
     */
     class Vec2 {
+        data: Float32Array;
+
         constructor(x: number, y: number);
         constructor();
 
