@@ -67,6 +67,7 @@
 /// <reference path="./engine/scene/material.d.ts" />
 /// <reference path="./engine/scene/mesh.d.ts" />
 /// <reference path="./engine/scene/model.d.ts" />
+/// <reference path="./engine/scene/morph.d.ts" />
 /// <reference path="./engine/scene/pick.d.ts" />
 /// <reference path="./engine/scene/scene.d.ts" />
 /// <reference path="./engine/scene/procedural.d.ts" />
