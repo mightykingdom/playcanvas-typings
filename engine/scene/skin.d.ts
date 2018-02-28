@@ -11,6 +11,9 @@ declare namespace pc {
      * @author Will Eastcott
      */
     class Skin {
+        inverseBindPose: pc.Mat4[];
+        boneNames: string[];
+
         constructor(graphicsDevice: pc.GraphicsDevice, ibp: pc.Mat4[], boneNames: string[])
     }
 
@@ -23,6 +26,11 @@ declare namespace pc {
      * @author Will Eastcott
      */
     class SkinInstance {
+        bones: pc.GraphNode[];
+        skin: pc.Skin;
+        matrices: pc.Mat4[];
+        matrixPalette: Float32Array;
+
         constructor(skin: pc.Skin, node: pc.GraphNode)
     }
 }
