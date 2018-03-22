@@ -7,6 +7,22 @@ declare namespace pc {
      */
     class ComponentSystemRegistry {
 
+        animation: pc.AnimationComponentSystem;
+        audiolistener: pc.AudioListenerComponentSystem;
+        audiosource: pc.AudioSourceComponentSystem;
+        camera: pc.CameraComponentSystem;
+        collision: pc.CollisionComponentSystem;
+        element: pc.ElementComponentSystem;
+        light: pc.LightComponentSystem;
+        model: pc.ModelComponentSystem;
+        particlesystem: pc.ParticleSystemComponentSystem;
+        rigidbody: pc.RigidbodyComponentSystem;
+        screen: pc.ScreenComponentSystem;
+        script: pc.ScriptComponentSystem;
+        sound: pc.SoundComponentSystem;
+        text: pc.TextComponentSystem;
+        zone: pc.ZoneComponentSystem;
+
         /**
          * @private
          * @function
