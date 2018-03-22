@@ -114,7 +114,7 @@ declare namespace pc {
          * @name pc.Material#update
          * @description Applies any changes made to the material's properties.
          */
-        update(): Error;
+        update(): void;
 
         /**
          * @function
@@ -122,7 +122,7 @@ declare namespace pc {
          * @name pc.Material#init
          * @param {Object} data The initial data for the material.
          */
-        init(data: any): Error;
+        init(data: any): void;
     }
 
     /**
