@@ -22,4 +22,13 @@ declare namespace pc {
         */
         render(inputTarget: pc.RenderTarget, outputTarget: pc.RenderTarget, rect: pc.Vec4): void;
     }
+
+    function createFullscreenQuad(device: pc.GraphicsDevice): pc.VertexBuffer;
+    function drawFullscreenQuad(
+        device: pc.GraphicsDevice,
+        target: pc.RenderTarget,
+        vertexBuffer: pc.VertexBuffer,
+        shader: pc.Shader,
+        rect?: pc.Vec4
+    ): void;
 }

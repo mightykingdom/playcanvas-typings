@@ -47,6 +47,7 @@ declare namespace pc {
 
         readonly canvas: HTMLCanvasElement;
 
+        webgl2: boolean;
         maxPixelRatio: number;
 
         /**
