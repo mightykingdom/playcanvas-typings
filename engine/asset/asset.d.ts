@@ -1,18 +1,18 @@
 declare namespace pc {
 
-    const ASSET_ANIMATION = 'animation';
-    const ASSET_AUDIO = 'audio';
-    const ASSET_IMAGE = 'image';
-    const ASSET_JSON = 'json';
-    const ASSET_MODEL = 'model';
-    const ASSET_MATERIAL = 'material';
-    const ASSET_TEXT = 'text';
-    const ASSET_TEXTURE = 'texture';
-    const ASSET_CUBEMAP = 'cubemap';
-    const ASSET_SHADER = 'shader';
-    const ASSET_CSS = 'css';
-    const ASSET_HTML = 'html';
-    const ASSET_SCRIPT = 'script';
+    const ASSET_ANIMATION: string;
+    const ASSET_AUDIO: string;
+    const ASSET_IMAGE: string;
+    const ASSET_JSON: string;
+    const ASSET_MODEL: string;
+    const ASSET_MATERIAL: string;
+    const ASSET_TEXT: string;
+    const ASSET_TEXTURE: string;
+    const ASSET_CUBEMAP: string;
+    const ASSET_SHADER: string;
+    const ASSET_CSS: string;
+    const ASSET_HTML: string;
+    const ASSET_SCRIPT: string;
 
     /**
     * @name pc.Asset
