@@ -85,25 +85,25 @@ declare namespace pc {
      * @author Will Eastcott
      */
     class Texture {
-        constructor(graphicsDevice: pc.GraphicsDevice, options?: {
-            width: number,
-            height: number,
-            depth: number,
-            format: number,
-            minFilter: number,
-            magFilter: number,
-            anisotropy: number,
-            addressU: number,
-            addressV: number,
-            addressW: number,
-            mipmaps: boolean,
-            cubemap: boolean,
-            volume: boolean,
-            rgbm: boolean,
-            fixCubemapSeams: boolean,
-            flipY: boolean,
-            compareOnRead: boolean,
-            compareFunc: boolean
+        constructor(graphicsDevice?: pc.GraphicsDevice, options?: {
+            width?: number,
+            height?: number,
+            depth?: number,
+            format?: number,
+            minFilter?: number,
+            magFilter?: number,
+            anisotropy?: number,
+            addressU?: number,
+            addressV?: number,
+            addressW?: number,
+            mipmaps?: boolean,
+            cubemap?: boolean,
+            volume?: boolean,
+            rgbm?: boolean,
+            fixCubemapSeams?: boolean,
+            flipY?: boolean,
+            compareOnRead?: boolean,
+            compareFunc?: boolean
         })
 
         name: string;
