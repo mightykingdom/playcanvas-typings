@@ -9,7 +9,5 @@ declare namespace pc {
      */
     class AnimationComponentSystem extends pc.ComponentSystem {
         constructor(app: pc.Application)
-
-
     }
 }

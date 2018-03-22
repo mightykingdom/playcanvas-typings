@@ -67,6 +67,7 @@ declare namespace pc {
     class CameraComponent extends pc.Component {
         constructor(system: pc.CameraComponentSystem, entity: pc.Entity)
 
+        camera: pc.Camera;
         projection: number;
         nearClip: number;
         farClip: number;
