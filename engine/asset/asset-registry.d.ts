@@ -8,7 +8,7 @@ declare namespace pc {
     * @param {pc.ResourceLoader} loader The ResourceLoader used to load the asset files.
     * @property {String} prefix A URL prefix that will be added to all asset loading requests.
     */
-    class AssetRegistry {
+    class AssetRegistry extends pc.Events {
         constructor(loader: pc.ResourceLoader)
 
         prefix: string;
