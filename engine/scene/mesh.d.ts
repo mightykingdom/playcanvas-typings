@@ -25,7 +25,7 @@ declare namespace pc {
      */
     class Mesh {
         vertexBuffer: pc.VertexBuffer;
-        indexBuffer: pc.IndexBuffer;
+        indexBuffer: pc.IndexBuffer[];
         primitive: MeshPrimitive[];
         aabb: pc.BoundingBox;
         skin: pc.Skin;
