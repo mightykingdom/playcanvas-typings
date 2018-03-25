@@ -93,6 +93,7 @@ declare namespace pc {
         layer: number;
         receiveShadow: boolean;
         skinInstance: pc.SkinInstance;
+        morphInstance: pc.MorphInstance;
         screenSpace: boolean;
         key: number;
     }
