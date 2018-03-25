@@ -139,7 +139,7 @@ declare namespace pc {
          *     indexed: false
          * )};
          */
-        draw(primitive: { type: number, base: number, count: number, indexed: boolean }, numInstances?: number): void;
+        draw(primitive: MeshPrimitive, numInstances?: number): void;
 
         /**
          * @function
