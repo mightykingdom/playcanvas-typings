@@ -110,6 +110,13 @@ declare namespace pc {
     // 3 - 14 are custom user layers
     const LAYER_WORLD: 15;
 
+    // New layers
+    const LAYERID_WORLD: 0;
+    const LAYERID_DEPTH: 1;
+    const LAYERID_SKYBOX: 2;
+    const LAYERID_IMMEDIATE: 3;
+    const LAYERID_UI: 4;
+
     /**
      * @enum pc.LIGHTTYPE
      * @name pc.LIGHTTYPE_DIRECTIONAL
@@ -286,6 +293,7 @@ declare namespace pc {
      * </ul>
      * Only lights with bakeDir=true will be used for generating the dominant light direction. Defaults to
      * pc.BAKE_COLORDIR.
+     * @property {pc.LayerComposition} layers A {@link pc.LayerComposition} that defines rendering order of this scene.
      */
     class Scene {
         ambientLight: pc.Color;
@@ -302,6 +310,7 @@ declare namespace pc {
         skyboxIntensity: number;
         skyboxMip: number;
         toneMapping: number;
+        layers: pc.LayerComposition;
 
         /**
          * @function
