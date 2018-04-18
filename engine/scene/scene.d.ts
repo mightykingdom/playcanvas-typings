@@ -339,6 +339,8 @@ declare namespace pc {
      * @property {pc.LayerComposition} layers A {@link pc.LayerComposition} that defines rendering order of this scene.
      */
     class Scene {
+        static defaultMaterial: pc.StandardMaterial;
+
         ambientLight: pc.Color;
         fog: string;
         fogColor: pc.Color;
