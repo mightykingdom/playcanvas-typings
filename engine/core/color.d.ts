@@ -21,6 +21,8 @@ declare namespace pc {
         b: number;
         a: number;
 
+        data: Float32Array;
+
         /**
         * @function
         * @name pc.Color#clone

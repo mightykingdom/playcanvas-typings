@@ -6,8 +6,6 @@ declare namespace pc {
      */
     class ComponentSystem extends pc.Events {
 
-        entity: pc.Entity;
-
         /**
          * @function
          * @name pc.events.on

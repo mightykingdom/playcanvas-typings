@@ -20,7 +20,7 @@ declare namespace pc {
         screen: pc.ScreenComponentSystem;
         script: pc.ScriptComponentSystem;
         sound: pc.SoundComponentSystem;
-        text: pc.TextComponentSystem;
+        // text: pc.TextComponentSystem;
         zone: pc.ZoneComponentSystem;
 
         /**

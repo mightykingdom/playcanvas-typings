@@ -23,6 +23,7 @@ declare namespace pc {
          */
         private readonly data: pc.ComponentData;
 
+        entity: pc.Entity;
         enabled: boolean;
 
 

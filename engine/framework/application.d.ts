@@ -1,6 +1,6 @@
 declare namespace pc {
 
-    const app: Application;
+    let app: Application;
 
     interface ApplicationOptions {
         keyboard?: pc.Keyboard;

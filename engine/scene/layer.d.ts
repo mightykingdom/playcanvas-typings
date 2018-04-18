@@ -110,6 +110,10 @@ declare namespace pc {
         clearStencilBuffer: boolean;
         layerReference: pc.Layer;
         cullingMask: number;
+        opaqueMeshInstances: pc.MeshInstance[];
+        transparentMeshInstances: pc.MeshInstance[];
+        shadowCasters: boolean[];
+
         onEnable: Function;
         onDisable: Function;
         onPreCull: Function;

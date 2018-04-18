@@ -242,7 +242,50 @@ declare namespace pc {
 
     const VIEW_CENTER: 0;
     const VIEW_LEFT: 1;
-    const VIEW_RIGHT: 2
+    const VIEW_RIGHT: 2;
+
+    /**
+     * @enum pc.SORTMODE
+     * @name pc.SORTMODE_NONE
+     * @description No sorting is applied. Mesh instances are rendered in the same order they were added to a layer.
+     */
+    const SORTMODE_NONE: 0;
+
+    /**
+     * @enum pc.SORTMODE
+     * @name pc.SORTMODE_MANUAL
+     * @description Mesh instances are sorted based on {@link pc.MeshInstance#drawOrder}.
+     */
+    const SORTMODE_MANUAL: 1;
+
+    /**
+     * @enum pc.SORTMODE
+     * @name pc.SORTMODE_MATERIALMESH
+     * @description Mesh instances are sorted to minimize switching between materials and meshes to improve rendering performance.
+     */
+    const SORTMODE_MATERIALMESH: 2;
+
+    /**
+     * @enum pc.SORTMODE
+     * @name pc.SORTMODE_BACK2FRONT
+     * @description Mesh instances are sorted back to front. This is the way to properly render many semi-transparent objects on different depth, one is blended on top of another.
+     */
+    const SORTMODE_BACK2FRONT: 3;
+
+    /**
+     * @enum pc.SORTMODE
+     * @name pc.SORTMODE_FRONT2BACK
+     * @description Mesh instances are sorted front to back. Depending on GPU and the scene, this option may give better performance than pc.SORTMODE_MATERIALMESH due to reduced overdraw.
+     */
+    const SORTMODE_FRONT2BACK: 4;
+
+    const COMPUPDATED_INSTANCES: 1;
+    const COMPUPDATED_LIGHTS: 2;
+    const COMPUPDATED_CAMERAS: 4;
+    const COMPUPDATED_BLEND: 8;
+
+    const ASPECT_AUTO: 0;
+    const ASPECT_MANUAL: 1;
 
     /**
      * @name pc.Scene
