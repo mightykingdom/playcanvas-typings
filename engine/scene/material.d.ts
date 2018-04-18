@@ -116,6 +116,8 @@ declare namespace pc {
          */
         update(): void;
 
+        updateShader(device?: pc.GraphicsDevice, scene?: pc.Scene, objDefs?: any, staticLightList?: any, pass?: number, sortedLights?: any): void;
+
         /**
          * @function
          * @description Initializes the material with the properties in the specified data.

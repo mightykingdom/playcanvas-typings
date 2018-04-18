@@ -1,4 +1,7 @@
 declare namespace pc {
+
+    const app: Application;
+
     interface ApplicationOptions {
         keyboard?: pc.Keyboard;
         mouse?: pc.Mouse;
@@ -133,6 +136,8 @@ declare namespace pc {
         * @description The Batch Manager of the Application
         */
         batcher: pc.BatchManager;
+
+        renderer: pc.ForwardRenderer;
 
         /**
         * @name pc.Application#autoRender
