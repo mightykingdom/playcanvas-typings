@@ -60,7 +60,7 @@ declare namespace pc {
          * @description Retrieves the projection matrix for the specified camera.
          * @returns {pc.Mat4} The camera's projection matrix.
          */
-        private getProjectionMatrix(): pc.Mat4
+        public getProjectionMatrix(): pc.Mat4
 
         /**
          * @private
