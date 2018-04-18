@@ -15,7 +15,7 @@ declare namespace pc {
         graph: pc.GraphNode;
         meshInstances: pc.MeshInstance[];
         skinInstances: pc.SkinInstance[];
-        morphInstances: pc.morphInstance[];
+        morphInstances: pc.MorphInstance[];
 
         /**
          * @function
