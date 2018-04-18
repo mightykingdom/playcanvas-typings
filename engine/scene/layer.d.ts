@@ -94,6 +94,7 @@ declare namespace pc {
      * Can be used in {@link pc.LayerComposition#getLayerById}.
      */
     class Layer {
+        constructor(options: any);
         id: number;
         name: string;
         enabled: boolean;
@@ -149,7 +150,7 @@ declare namespace pc {
          * @param {Array} meshInstances Array of {@link pc.MeshInstance}.
          * @param {Boolean} [skipShadowCasters] Set it to true if you don't want these mesh instances to cast shadows in this layer.
          */
-        addMeshInstances(meshInstances, skipShadowCasters): void;
+        addMeshInstances(meshInstances: pc.MeshInstance[], skipShadowCasters?: boolean): void;
 
         /**
          * @function
@@ -158,7 +159,7 @@ declare namespace pc {
          * @param {Array} meshInstances Array of {@link pc.MeshInstance}. If they were added to this layer, they will be removed.
          * @param {Boolean} [skipShadowCasters] Set it to true if you want to still cast shadows from removed mesh instances or if they never did cast shadows before.
          */
-        removeMeshInstances(meshInstances, skipShadowCasters): void;
+        removeMeshInstances(meshInstances: pc.MeshInstance[], skipShadowCasters?: boolean): void;
 
         /**
          * @function
@@ -166,7 +167,7 @@ declare namespace pc {
          * @description Removes all mesh instances from this layer.
          * @param {Boolean} [skipShadowCasters] Set it to true if you want to still cast shadows from removed mesh instances or if they never did cast shadows before.
          */
-        clearMeshInstances(skipShadowCasters): void;
+        clearMeshInstances(skipShadowCasters?: boolean): void;
 
         /**
          * @function
@@ -174,7 +175,7 @@ declare namespace pc {
          * @description Adds a light to this layer.
          * @param {pc.LightComponent} light A {@link pc.LightComponent}.
          */
-        addLight(light): void;
+        addLight(light: pc.LightComponent): void;
 
         /**
          * @function
@@ -182,7 +183,7 @@ declare namespace pc {
          * @description Removes a light from this layer.
          * @param {pc.LightComponent} light A {@link pc.LightComponent}.
          */
-        removeLight(light): void;
+        removeLight(light: pc.LightComponent): void;
 
         /**
          * @function
@@ -197,7 +198,7 @@ declare namespace pc {
          * @description Adds an array of mesh instances to this layer, but only as shadow casters (they will not be rendered anywhere, but only cast shadows on other objects).
          * @param {Array} meshInstances Array of {@link pc.MeshInstance}.
          */
-        addShadowCasters(meshInstances): void;
+        addShadowCasters(meshInstances: pc.MeshInstance[]): void;
 
         /**
          * @function
@@ -205,7 +206,7 @@ declare namespace pc {
          * @description Removes multiple mesh instances from the shadow casters list of this layer, meaning they will stop casting shadows.
          * @param {Array} meshInstances Array of {@link pc.MeshInstance}. If they were added to this layer, they will be removed.
          */
-        removeShadowCasters(meshInstances): void;
+        removeShadowCasters(meshInstances: pc.MeshInstance[]): void;
 
         /**
          * @function
@@ -213,7 +214,7 @@ declare namespace pc {
          * @description Adds a camera to this layer.
          * @param {pc.CameraComponent} camera A {@link pc.CameraComponent}.
          */
-        addCamera(camera): void;
+        addCamera(camera: pc.CameraComponent): void;
 
         /**
          * @function
@@ -221,7 +222,7 @@ declare namespace pc {
          * @description Removes a camera from this layer.
          * @param {pc.CameraComponent} camera A {@link pc.CameraComponent}.
          */
-        removeCamera(camera): void;
+        removeCamera(camera: pc.CameraComponent): void;
 
         /**
          * @function

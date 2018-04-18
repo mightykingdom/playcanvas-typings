@@ -24,7 +24,7 @@ declare namespace pc {
          * @description Adds a layer (both opaque and semi-transparent parts) to the end of the {@link pc.Layer#layerList}.
          * @param {pc.Layer} layer A {@link pc.Layer} to add.
          */
-        push(layer): void;
+        push(layer: pc.Layer): void;
 
         /**
          * @function
@@ -33,7 +33,7 @@ declare namespace pc {
          * @param {pc.Layer} layer A {@link pc.Layer} to add.
          * @param {Number} index Insertion position.
          */
-        insert(layer, index): void;
+        insert(layer: pc.Layer, index: number): void;
 
         /**
          * @function
@@ -41,7 +41,7 @@ declare namespace pc {
          * @description Removes a layer (both opaque and semi-transparent parts) from {@link pc.Layer#layerList}.
          * @param {pc.Layer} layer A {@link pc.Layer} to remove.
          */
-        remove(layer): void;
+        remove(layer: pc.Layer): void;
 
         /**
          * @function
@@ -49,7 +49,7 @@ declare namespace pc {
          * @description Adds part of the layer with opaque (non semi-transparent) objects to the end of the {@link pc.Layer#layerList}.
          * @param {pc.Layer} layer A {@link pc.Layer} to add.
          */
-        pushOpaque(layer): void;
+        pushOpaque(layer: pc.Layer): void;
 
         /**
          * @function
@@ -58,7 +58,7 @@ declare namespace pc {
          * @param {pc.Layer} layer A {@link pc.Layer} to add.
          * @param {Number} index Insertion position.
          */
-        insertOpaque(layer, index): void;
+        insertOpaque(layer: pc.Layer, index: number): void;
 
         /**
          * @function
@@ -66,7 +66,7 @@ declare namespace pc {
          * @description Removes an opaque part of the layer (non semi-transparent mesh instances) from {@link pc.Layer#layerList}.
          * @param {pc.Layer} layer A {@link pc.Layer} to remove.
          */
-        removeOpaque(layer): void;
+        removeOpaque(layer: pc.Layer): void;
 
         /**
          * @function
@@ -74,7 +74,7 @@ declare namespace pc {
          * @description Adds part of the layer with semi-transparent objects to the end of the {@link pc.Layer#layerList}.
          * @param {pc.Layer} layer A {@link pc.Layer} to add.
          */
-        pushTransparent(layer): void;
+        pushTransparent(layer: pc.Layer): void;
 
         /**
          * @function
@@ -83,7 +83,7 @@ declare namespace pc {
          * @param {pc.Layer} layer A {@link pc.Layer} to add.
          * @param {Number} index Insertion position.
          */
-        insertTransparent(layer, index): void;
+        insertTransparent(layer: pc.Layer, index: number): void;
 
         /**
          * @function
@@ -91,7 +91,7 @@ declare namespace pc {
          * @description Removes a transparent part of the layer from {@link pc.Layer#layerList}.
          * @param {pc.Layer} layer A {@link pc.Layer} to remove.
          */
-        removeTransparent(layer): void;
+        removeTransparent(layer: pc.Layer): void;
 
         /**
          * @function
@@ -100,7 +100,7 @@ declare namespace pc {
          * @param {pc.Layer} layer A {@link pc.Layer} to find index of.
          * @returns {Number} The index of the opaque part of the specified layer.
          */
-        getOpaqueIndex(layer): void;
+        getOpaqueIndex(layer: pc.Layer): void;
 
         /**
          * @function
@@ -109,7 +109,7 @@ declare namespace pc {
          * @param {pc.Layer} layer A {@link pc.Layer} to find index of.
          * @returns {Number} The index of the semi-transparent part of the specified layer.
          */
-        getTransparentIndex(layer): void;
+        getTransparentIndex(layer: pc.Layer): void;
 
         /**
          * @function
@@ -118,7 +118,7 @@ declare namespace pc {
          * @param {Number} id An ID of the layer to find.
          * @returns {pc.Layer} The layer corresponding to the specified ID. Returns null if layer is not found.
          */
-        getLayerById(id): pc.Layer;
+        getLayerById(id: number): pc.Layer;
 
         /**
          * @function
@@ -127,6 +127,6 @@ declare namespace pc {
          * @param {String} name The name of the layer to find.
          * @returns {pc.Layer} The layer corresponding to the specified name. Returns null if layer is not found.
          */
-        getLayerByName(name): pc.Layer;
+        getLayerByName(name: string): pc.Layer;
     }
 }
