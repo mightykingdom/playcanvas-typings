@@ -98,6 +98,7 @@ declare namespace pc {
         id: number;
         name: string;
         enabled: boolean;
+        cameras: pc.CameraComponent[];
         opaqueSortMode: number;
         transparentSortMode: number;
         renderTarget: pc.RenderTarget;
