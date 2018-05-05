@@ -22,6 +22,7 @@ declare namespace pc {
         a: number;
 
         data: Float32Array;
+        data3: Float32Array;
 
         /**
         * @function
