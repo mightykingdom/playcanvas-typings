@@ -96,6 +96,13 @@ declare namespace pc {
         morphInstance: pc.MorphInstance;
         screenSpace: boolean;
         key: number;
+
+        getParameter(name: string): number | any | pc.Texture;
+        getParameters(): any;
+        setParameter(name: string, data: number | any | pc.Texture, passFlags?: number): void;
+        setParameters(): void;
+        deleteParameter(name: string): void;
+        clearParameters(): void;
     }
 
     class Command {
