@@ -35,6 +35,7 @@
 /// <reference path="./engine/graphics/texture.d.ts" />
 /// <reference path="./engine/graphics/render-target.d.ts" />
 /// <reference path="./engine/graphics/shader.d.ts" />
+/// <reference path="./engine/graphics/simple-post-effect.d.ts" />
 /// <reference path="./engine/graphics/program-library.d.ts" />
 /// <reference path="./engine/graphics/program-lib.d.ts" />
 /// <reference path="./engine/graphics/device.d.ts" />
