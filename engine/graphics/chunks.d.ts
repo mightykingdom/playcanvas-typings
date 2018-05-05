@@ -2,7 +2,7 @@ declare namespace pc {
     namespace shaderChunks {
         function collectAttribs(vsCode: string): object;
         function createShader(device: pc.GraphicsDevice, vsName: string, psName: string, useTransformFeedback: boolean): pc.Shader;
-        function createShaderFromCode(device: pc.GraphicsDevice, vsCode: string, psCode: string, uName: string, useTransformFeedback: boolean): pc.Shader;
+        function createShaderFromCode(device: pc.GraphicsDevice, vsCode: string, psCode: string, uName: string, useTransformFeedback?: boolean): pc.Shader;
         const TBNPS: string;
         const TBNfastPS: string;
         const alphaTestPS: string;

@@ -48,7 +48,7 @@ declare namespace pc {
             autoResolve?: boolean,
             face?: number
         })
-        constructor(options: pc.GraphicsDevice, _arg2: pc.Texture, _arg3: {
+        constructor(options: pc.GraphicsDevice, _arg2: pc.Texture, _arg3?: {
             colorBuffer?: pc.Texture,
             depth?: boolean,
             stencil?: boolean,

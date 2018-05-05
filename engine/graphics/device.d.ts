@@ -93,6 +93,8 @@ declare namespace pc {
          */
         private setProgramLibrary(programLib): pc.ProgramLibrary;
 
+        copyRenderTarget(source: pc.RenderTarget, dest: pc.RenderTarget, color: boolean, depth: boolean): void;
+
         /**
          * @function
          * @name pc.GraphicsDevice#updateBegin
