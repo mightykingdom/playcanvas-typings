@@ -16,7 +16,7 @@ declare namespace pc {
         light: pc.LightComponentSystem;
         model: pc.ModelComponentSystem;
         particlesystem: pc.ParticleSystemComponentSystem;
-        rigidbody: pc.RigidbodyComponentSystem;
+        rigidbody: pc.RigidBodyComponentSystem;
         screen: pc.ScreenComponentSystem;
         script: pc.ScriptComponentSystem;
         sound: pc.SoundComponentSystem;
