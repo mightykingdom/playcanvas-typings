@@ -1,7 +1,4 @@
 declare namespace pc {
-    type ComponentTypes = 'animation' | 'audiolistner' | 'camera' | 'collision' |
-        'element' | 'light' | 'model' | 'particlesystem' |
-        'rigidbody' | 'screen' | 'script' | 'sound' | 'zone';
 
     /**
      * @name pc.Entity
@@ -88,7 +85,7 @@ declare namespace pc {
          *   clearColor: new pc.Color(1,0,0),
          * });
          */
-        addComponent(type: pc.ComponentTypes, data?: any): pc.Component;
+        addComponent(type: string, data?: any): pc.Component;
 
         /**
          * @function
@@ -101,7 +98,7 @@ declare namespace pc {
          * //...
          * entity.removeComponent("light"); // remove light component
          */
-        removeComponent(type: pc.ComponentTypes): void;
+        removeComponent(type: string): void;
 
         /**
          * @function
@@ -169,7 +166,7 @@ declare namespace pc {
         *   this.entity.parent.addChild(e); // Add it as a sibling to the original
         */
         clone(): pc.Entity;
-                
+
 
         // Possible attached components
         animation: pc.AnimationComponent;
