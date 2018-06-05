@@ -14,6 +14,14 @@ declare namespace pc {
     const ASSET_HTML: string;
     const ASSET_SCRIPT: string;
 
+    interface AssetFile {
+        url: string;
+        filename?: string;
+        size?: number;
+        hash?: string;
+        variants?: any;
+    }
+
     /**
     * @name pc.Asset
     * @class An asset record of a file or data resource that can be loaded by the engine.
@@ -54,13 +62,13 @@ declare namespace pc {
     * });
     */
     class Asset extends pc.Events {
-        constructor(name: string, type: string, file: { url: string, filename?: string, size?: number, hash?: string } | null, data?: {})
+        constructor(name: string, type: string, file: AssetFile | null, data?: {})
 
         name: string;
         id: number;
         type: string;
         tags: pc.Tags;
-        file: { url: string, filename?: string, size?: number, hash?: string } | null;
+        file: AssetFile | null;
         data: {};
         resource: pc.Texture | pc.Model | pc.Material;
         resources: Array<pc.Texture | pc.Model | pc.Material>;
