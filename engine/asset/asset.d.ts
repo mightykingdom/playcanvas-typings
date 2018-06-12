@@ -69,12 +69,14 @@ declare namespace pc {
         type: string;
         tags: pc.Tags;
         file: AssetFile | null;
-        data: {};
+        data: any;
         resource: pc.Texture | pc.Model | pc.Material;
         resources: Array<pc.Texture | pc.Model | pc.Material>;
         preload: boolean;
+        loading: boolean;
         loaded: boolean;
         registry: pc.AssetRegistry;
+        loadFaces: boolean; // Cubemap Asset
 
         /**
         * @name pc.Asset#getFileUrl
