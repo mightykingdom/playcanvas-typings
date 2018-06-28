@@ -6,6 +6,7 @@ declare namespace pc {
         keyboard?: pc.Keyboard;
         mouse?: pc.Mouse;
         touch?: pc.TouchDevice;
+        elementInput?: pc.ElementInput;
         gamepads?: pc.GamePads;
         scriptPrefix?: string;
         assetPrefix?: string;
