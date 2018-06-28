@@ -9,7 +9,7 @@ declare namespace pc {
         gamepads?: pc.GamePads;
         scriptPrefix?: string;
         assetPrefix?: string;
-        graphicsDeviceOptions?: {};
+        graphicsDeviceOptions?: any;
     }
 
     /**
