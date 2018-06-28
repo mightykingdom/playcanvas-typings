@@ -51,7 +51,7 @@ declare namespace pc {
      * var keyboard = new pc.Keyboard(window); // attach keyboard listeners to the window
      */
     class Keyboard {
-        constructor(element?: Element, options?: { preventDefault?: boolean, stopPropagation?: boolean })
+        constructor(element?: Element | Window, options?: { preventDefault?: boolean, stopPropagation?: boolean })
 
         /**
         * @function
