@@ -1,3 +1,4 @@
+/// <reference path="webvr-api">
 /// <reference path="./engine/core/core.d.ts" />
 /// <reference path="./engine/core/color.d.ts" />
 /// <reference path="./engine/core/guid.d.ts" />
