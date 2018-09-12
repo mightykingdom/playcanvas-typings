@@ -49,6 +49,7 @@ declare namespace pc {
 
         webgl2: boolean;
         maxPixelRatio: number;
+        contextLost: boolean;
 
         /**
          * @function

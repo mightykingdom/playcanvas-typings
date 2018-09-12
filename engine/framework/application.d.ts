@@ -455,6 +455,8 @@ declare namespace pc {
          * app.renderLines(points, colors);
         */
         renderLines(position: pc.Vec3[], color: pc.Color[], lineType?: number): void;
+
+        vr: pc.VrManager;
     }
 
     /**
