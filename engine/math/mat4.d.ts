@@ -31,7 +31,7 @@ declare namespace pc {
         constructor(v0: [
             number, number, number, number, number, number, number, number,
             number, number, number, number, number, number, number, number
-        ]);
+        ] | Float32Array);
         constructor();
 
         /**
@@ -354,7 +354,7 @@ declare namespace pc {
             number, number, number, number,
             number, number, number, number,
             number, number, number, number
-        ]): this;
+        ] | Float32Array): this;
 
         /**
          * @function
