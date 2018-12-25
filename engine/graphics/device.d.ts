@@ -46,6 +46,7 @@ declare namespace pc {
         readonly maxVolumeSize: number;
 
         readonly canvas: HTMLCanvasElement;
+        scope: pc.ScopeSpace;
 
         webgl2: boolean;
         maxPixelRatio: number;
