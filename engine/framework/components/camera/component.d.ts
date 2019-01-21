@@ -89,6 +89,7 @@ declare namespace pc {
         calculateProjection: Function;
         cullFaces: boolean;
         flipFaces: boolean;
+        layers: number[];
 
         /**
          * @readonly
