@@ -441,6 +441,7 @@ declare namespace pc {
          * app.renderLine(start, end, startColor, endColor, pc.LINEBATCH_OVERLAY);
          */
         renderLine(start: pc.Vec3, end: pc.Vec3, startColor: pc.Color, endColor: pc.Color, lineType: number): void;
+        renderLine(start: pc.Vec3, end: pc.Vec3, startColor: pc.Color, endColor?: pc.Color, options?: any): void;
 
         /**
          * @function
@@ -455,6 +456,7 @@ declare namespace pc {
          * app.renderLines(points, colors);
         */
         renderLines(position: pc.Vec3[], color: pc.Color[], lineType?: number): void;
+        renderLines(position: pc.Vec3[], color: pc.Color[], options?: any): void;
 
         vr: pc.VrManager;
     }
