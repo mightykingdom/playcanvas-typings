@@ -313,6 +313,9 @@ declare namespace pc {
          */
         destroy(): void;
 
+
+        dirtyAll(): void;
+
         /**
          * @function
          * @name pc.Texture#lock
