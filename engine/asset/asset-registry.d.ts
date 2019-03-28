@@ -101,7 +101,7 @@ declare namespace pc {
         *     var texture = asset.resource;
         * });
         */
-        loadFromUrl(url: string, type: string, callback: (...args: any[]) => {}): void;
+        loadFromUrl(url: string, type: string, callback: (...args: any[]) => void): void;
 
         /**
         * @function
